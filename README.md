@@ -28,3 +28,4 @@ Human pose estimation
 
 python classify.py
 
+For more information about this project, please visit: https://www.rahuliyer.com/automated-transactional-analysis
