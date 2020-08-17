@@ -1,0 +1,95 @@
+#react-entry-point {
+	text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header'
+    'left right right right right'
+    'footer footer footer footer footer';
+
+  grid-template-columns: 480px auto auto auto auto;
+
+  max-width: 1280px;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+
+
+.header { grid-area: header; }
+.left { 
+	grid-area: left; 
+	height: 290px; 	
+}
+.right { 
+	grid-area: right; 
+	overflow-y: scroll;
+	height: 290px; 	
+}
+
+.footer { 
+	grid-area: footer; 
+}
+
+#segmentation-table{
+	width: 1280px;
+	overflow: scroll;
+}
+
+#segmentation{
+	margin: 0.5rem;
+}
+
+#hidden-media{
+	display: none;
+}
+
+#hidden-canvas{
+	display: none;
+}
+
+#indicators tr{
+	height: 80px;
+}
+
+
+.lds-spinner {
+  display: block;
+  position: relative;
+  margin: auto;
+  width: 64px;
+  height: 64px;
+}
+.lds-spinner div {
+  display: inline-block;
+  position: absolute;
+  left: 6px;
+  width: 13px;
+  background-color: lightblue;
+  animation: lds-spinner 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-spinner div:nth-child(1) {
+  left: 6px;
+  animation-delay: -0.24s;
+}
+.lds-spinner div:nth-child(2) {
+  left: 26px;
+  animation-delay: -0.12s;
+}
+.lds-spinner div:nth-child(3) {
+  left: 45px;
+  animation-delay: 0;
+}
+@keyframes lds-spinner {
+  0% {
+    top: 6px;
+    height: 51px;
+  }
+  50%, 100% {
+    top: 19px;
+    height: 26px;
+  }
+}
+
